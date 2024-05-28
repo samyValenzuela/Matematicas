@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom,#db8dff, #be7ff1, #b626f8);
+        }
+        h1 {
+            color: #333;
+        }
+    
+        button.profe {
+            padding: 15px 40px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #5162ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin:15px;
+        }
+
+        button.profe:hover {
+            background-color: #0004e6;
+        }
+
+        button.alumno {
+            padding: 15px 40px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #a200ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.alumno:hover {
+            background-color: #5f009e;
+        }
+        </style>
+    </head>    
+    <body>
+      <h1>Que eres?</h1>
+      <button   class="profe" onclick="location.href='profe.html'">Profesor</button>
+      <button   class="alumno" onclick="location.href='alumno.html'">Alumno</button>
+    </body>
+</html>

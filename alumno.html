@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom,#8e8dff, #cd8fff, #ff99fa);
+        }
+        h1 {
+            color: #333;
+        }
+
+        .principalAlumno {
+            padding: 15px 40px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #a200ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .principalAlumno:hover {
+            background-color: #5f009e;
+        }
+        form{
+            display:flexbox;
+            -ms-flex-align: center;
+        }
+        .formulario{
+            display:block;
+        }
+        </style>
+
+    </head>
+    <body>
+        <form action="/my-handling-form-page" method="post">
+            <h1>Iniciar sesion "Alumno";</h1>
+            <ul>
+              <li>
+                <label class="formulario">Nombre(s):</label>
+                <input required/>
+              </li>
+              <li>
+                <label class="formulario" >Apellidos:</label>
+                <input required />
+              </li>
+              <li>
+                <label class="formulario">Edad:</label>
+                <input required/>
+              </li>
+              <li>
+                <label class="formulario" for="fecha">Fecha de Nacimieto:</label>
+                <input type="date" id="fecha" name="fecha" required>
+              </li>
+              <li>
+                <label class="formulario">Correo:</label>
+                <input required>
+              </li>
+              <li>
+                <label class="formulario">Contraseña:</label>
+                <input required/>
+              </li>
+            </ul>
+        </form>
+        <button   class="principalAlumno" onclick="location.href='principalAlumno.html'">Iniciar sesion:</button>
+    </body>
+</html>

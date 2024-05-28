@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de E-Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .quiz {
+            margin-top: 20px;
+        }
+        .quiz input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Curso de E-Learning</h1>
+    </header>
+    <nav>
+        <a href="#module1">Módulo 1</a>
+        <a href="#module2">Módulo 2</a>
+        <a href="#module3">Módulo 3</a>
+    </nav>
+    <div class="content" id="module1">
+        <h2>Módulo 1: Introducción al E-Learning</h2>
+        <p>En este módulo, aprenderás sobre los fundamentos del e-learning y cómo ha revolucionado la educación.</p>
+    </div>
+    <div class="content" id="module2">
+        <h2>Módulo 2: Ventajas del E-Learning</h2>
+        <p>En este módulo, exploraremos las múltiples ventajas del e-learning, incluyendo flexibilidad, accesibilidad y reducción de costos.</p>
+    </div>
+    <div class="content" id="module3">
+        <h2>Módulo 3: Desventajas del E-Learning</h2>
+        <p>En este módulo, discutiremos las desventajas del e-learning, como la falta de interacción personal y los desafíos tecnológicos.</p>
+    </div>
+    <div class="content quiz">
+        <h2>Evaluación</h2>
+        <form action="#">
+            <p>1. ¿Cuál es una de las principales ventajas del e-learning?</p>
+            <input type="radio" id="option1" name="question1" value="a">
+            <label for="option1">Acceso global y flexibilidad</label><br>
+            <input type="radio" id="option2" name="question1" value="b">
+            <label for="option2">Alto costo</label><br>
+
+            <p>2. ¿Qué desventaja está asociada con el e-learning?</p>
+            <input type="radio" id="option3" name="question2" value="a">
+            <label for="option3">Falta de interacción personal</label><br>
+            <input type="radio" id="option4" name="question2" value="b">
+            <label for="option4">Acceso a recursos físicos ilimitados</label><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
